@@ -29,16 +29,15 @@ p {
   padding: 0;
   margin: 0;
 }
-
 .container {
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   outline: 2px solid tomato;
 }
 
-.page-header {
-}
 /*logo*/
 .logo {
   color: #2196f3;
@@ -69,6 +68,9 @@ p {
 
 .header-link,
 .contact-header {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -89,9 +91,33 @@ p {
   color: var(--accent-color);
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.header-list .nav:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-list .nav + .nav {
+  margin-left: 50px;
+}
+
 /*Hero*/
 .hero {
   text-align: center;
+  background-color: var(--primary-text-color);
 }
 
 .hero-title {
@@ -102,7 +128,7 @@ p {
   min-height: 120px;
 
   color: var(--title-text-color);
-  background-color: var(--primary-text-color);
+
   font-weight: 900;
   font-size: 44px;
   text-align: center;
@@ -137,7 +163,17 @@ p {
 }
 
 /*Особливості*/
-.features {
+.features-list {
+  display: flex;
+}
+
+.features-list .item {
+  width: 270px;
+  background-color: tomato;
+}
+
+.features-list .item + .item {
+  margin-left: 30px;
 }
 
 .features-subtitle {
@@ -149,7 +185,6 @@ p {
 }
 
 .features-text {
-  width: 270px;
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
@@ -241,10 +276,23 @@ p {
   background-color: antiquewhite;
 }
 
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .project {
   width: 370px;
   height: 404px;
   border-bottom: 1px solid #eeeeee;
+}
+
+.project:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.project:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
 
 .project-title {
@@ -256,7 +304,7 @@ p {
 
 .project-text {
   margin-top: 4px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px;*/
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
