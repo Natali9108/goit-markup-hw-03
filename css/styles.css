@@ -5,6 +5,9 @@
   --accent-color: #2196f3;
   --footer-color: #2f303a;
   --filter-btn-color: #f5f4fa;
+  --studio-footer-color: #000000;
+  --border-header-color: #ececec;
+  --border-projects-color: #eeeeee;
 }
 
 body {
@@ -40,7 +43,7 @@ p {
 
 /*logo*/
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -54,7 +57,7 @@ p {
 }
 
 .studio-black {
-  color: #000000;
+  color: var(--studio-footer-color);
 }
 
 .studio-white {
@@ -69,8 +72,8 @@ p {
 .header-link,
 .contact-header {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 31px;
+  padding-bottom: 31px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -94,6 +97,7 @@ p {
 .main-nav {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--border-header-color);
 }
 
 .header-list {
@@ -167,17 +171,18 @@ p {
   display: flex;
 }
 
-.features-list .item {
-  width: 270px;
-  background-color: tomato;
+.features-item {
+  flex-basis: calc((100%-90px) / 4);
+  margin-right: 30px;
 }
 
-.features-list .item + .item {
-  margin-left: 30px;
+.features-item:last-child {
+  margin-right: 0;
 }
 
 .features-subtitle {
   margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -192,10 +197,18 @@ p {
 }
 
 /*Чим ми займаємося*/
-.work {
+
+.work-list {
+  display: flex;
 }
 
-.work-title {
+.work-item {
+  flex-basis: calc((100%-60px) / 3);
+  margin-right: 30px;
+}
+
+.work-item:last-child {
+  margin-right: 0;
 }
 
 /*Наша команда*/
@@ -282,13 +295,15 @@ p {
 }
 
 .project {
+  width: calc((100% - 60px) / 3);
   width: 370px;
-  height: 404px;
-  border-bottom: 1px solid #eeeeee;
+  margin-right: 30px;
+
+  border-bottom: 1px solid var(--border-projects-color);
 }
 
-.project:not(:nth-child(3n)) {
-  margin-right: 30px;
+.project:nth-child(3n) {
+  margin-right: 0;
 }
 
 .project:not(:nth-last-child(-n + 3)) {
