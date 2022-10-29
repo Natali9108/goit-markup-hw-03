@@ -22,33 +22,38 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container main-nav">
-        <a href="./index.html" class="logo"
+        <a href="./index.html" class="logo link"
           >Web<span class="studio-black">Studio</span></a
         >
         <nav>
           <ul class="header-list list">
             <li class="nav">
-              <a href="./index.html" class="header-link">Студія</a>
+              <a href="./index.html" class="header-link link">Студія</a>
             </li>
             <li class="nav">
-              <a href="./portfolio.html" target="_blank" class="header-link"
+              <a
+                href="./portfolio.html"
+                target="_blank"
+                class="header-link link"
                 >Портфоліо</a
               >
             </li>
-            <li class="nav"><a href="" class="header-link">Контакти</a></li>
+            <li class="nav">
+              <a href="" class="header-link link">Контакти</a>
+            </li>
           </ul>
         </nav>
 
         <ul class="contact-list list">
           <li class="nav">
-            <a href="email:info@devstudio.com" class="contact-header"
+            <a href="email:info@devstudio.com" class="contact-header link"
               >info@devstudio.com</a
             >
           </li>
           <li class="nav">
-            <a href="tel:+380961111111" class="contact-header"
+            <a href="tel:+380961111111" class="contact-header link"
               >+38 096 111 11 11</a
             >
           </li>
@@ -60,11 +65,21 @@
       <section class="projects section">
         <div class="container">
           <ul class="filter-list list">
-            <li><button class="filter-btn" type="button">Усі</button></li>
-            <li><button class="filter-btn" type="button">Веб-сайти</button></li>
-            <li><button class="filter-btn" type="button">Додатки</button></li>
-            <li><button class="filter-btn" type="button">Дизайн</button></li>
-            <li><button class="filter-btn" type="button">Маркетинг</button></li>
+            <li class="filter-item">
+              <button class="filter-btn" type="button">Усі</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn" type="button">Веб-сайти</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn" type="button">Додатки</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn" type="button">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn" type="button">Маркетинг</button>
+            </li>
           </ul>
           <h1 hidden>Projects</h1>
           <ul class="project-list list">
@@ -77,8 +92,10 @@
                   height="294"
                 />
               </a>
-              <h2 class="project-title">Технокряк</h2>
-              <p class="project-text">Веб-сайт</p>
+              <div class="project-wrap">
+                <h2 class="project-title">Технокряк</h2>
+                <p class="project-text">Веб-сайт</p>
+              </div>
             </li>
             <li class="project">
               <a href="">
@@ -89,8 +106,10 @@
                   height="294"
                 />
               </a>
-              <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-              <p class="project-text">Дизайн</p>
+              <div class="project-wrap">
+                <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+                <p class="project-text">Дизайн</p>
+              </div>
             </li>
             <li class="project">
               <a href="">
@@ -101,8 +120,10 @@
                   height="294"
                 />
               </a>
-              <h2 class="project-title">Ресторан Seafood</h2>
-              <p class="project-text">Додаток</p>
+              <div class="project-wrap">
+                <h2 class="project-title">Ресторан Seafood</h2>
+                <p class="project-text">Додаток</p>
+              </div>
             </li>
             <li class="project">
               <a href="">
@@ -113,8 +134,10 @@
                   height="294"
                 />
               </a>
-              <h2 class="project-title">Проєкт Prime</h2>
-              <p class="project-text">Маркетинг</p>
+              <div class="project-wrap">
+                <h2 class="project-title">Проєкт Prime</h2>
+                <p class="project-text">Маркетинг</p>
+              </div>
             </li>
             <li class="project">
               <a href="">
@@ -125,8 +148,10 @@
                   height="294"
                 />
               </a>
-              <h2 class="project-title">Проєкт Boxes</h2>
-              <p class="project-text">Додаток</p>
+              <div class="project-wrap">
+                <h2 class="project-title">Проєкт Boxes</h2>
+                <p class="project-text">Додаток</p>
+              </div>
             </li>
             <li class="project">
               <a href="">
@@ -137,8 +162,10 @@
                   height="294"
                 />
               </a>
-              <h2 class="project-title">Inspiration has no Borders</h2>
-              <p class="project-text">Веб-сайт</p>
+              <div class="project-wrap">
+                <h2 class="project-title">Inspiration has no Borders</h2>
+                <p class="project-text">Веб-сайт</p>
+              </div>
             </li>
             <li class="project">
               <a href="">
@@ -149,8 +176,10 @@
                   height="294"
                 />
               </a>
-              <h2 class="project-title">Видання Limited Edition</h2>
-              <p class="project-text">Дизайн</p>
+              <div class="project-wrap">
+                <h2 class="project-title">Видання Limited Edition</h2>
+                <p class="project-text">Дизайн</p>
+              </div>
             </li>
             <li class="project">
               <a href="">
@@ -161,8 +190,10 @@
                   height="294"
                 />
               </a>
-              <h2 class="project-title">Проєкт LAB</h2>
-              <p class="project-text">Маркетинг</p>
+              <div class="project-wrap">
+                <h2 class="project-title">Проєкт LAB</h2>
+                <p class="project-text">Маркетинг</p>
+              </div>
             </li>
             <li class="project">
               <a href="">
@@ -173,8 +204,10 @@
                   height="294"
                 />
               </a>
-              <h2 class="project-title">Growing Business</h2>
-              <p class="project-text">Додаток</p>
+              <div class="project-wrap">
+                <h2 class="project-title">Growing Business</h2>
+                <p class="project-text">Додаток</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -182,28 +215,28 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="nav-footer container">
         <a href="./index.html" class="logo"
           >Web<span class="studio-white">Studio</span></a
         >
         <address class="address">
           <ul class="address-list list">
-            <li>
+            <li class="address-item">
               <a
-                class="footer-address"
+                class="footer-address link"
                 href="https://goo.gl/maps/YuygyRmskys3fxmU9"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li>
-              <a class="footer-contact" href="mailto:info@devstudio.com"
+            <li class="address-item">
+              <a class="footer-contact link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a class="footer-contact" href="tel:+380961111111"
+            <li class="address-item">
+              <a class="footer-contact link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
