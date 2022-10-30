@@ -12,7 +12,6 @@
 
 /*Дефолтні стилі*/
 body {
-  margin: 0;
   color: var(--primary-text-color);
   background-color: var(--title-text-color);
   font-family: roboto, sans-serif;
@@ -96,6 +95,11 @@ img {
 .header-link:focus {
   color: var(--accent-color);
 }
+
+.current {
+  color: var(--accent-color);
+}
+
 .contact-header {
   color: var(--secondary-text-color);
 }
@@ -108,7 +112,6 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--border-header-color);
 }
 
 .header-list {
@@ -133,9 +136,6 @@ img {
 .hero {
   text-align: center;
   background-color: var(--primary-text-color);
-}
-
-.hero-container {
   padding: 200px 0;
 }
 
@@ -211,7 +211,9 @@ img {
 }
 
 /*Чим ми займаємося*/
-
+.work {
+  padding-top: 0;
+}
 .work-list {
   display: flex;
 }
@@ -258,6 +260,7 @@ img {
 .team-wrappe {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--title-text-color);
 }
 
 .team-subtitle {
@@ -329,6 +332,7 @@ img {
   padding: 20px 24px;
 
   border: 1px solid var(--border-projects-color);
+  border-top: none;
 }
 
 .project-title {
@@ -348,9 +352,6 @@ img {
 /*footer*/
 .footer {
   background-color: var(--footer-color);
-}
-
-.nav-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
